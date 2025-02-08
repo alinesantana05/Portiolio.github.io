@@ -41,7 +41,6 @@
                 </div>
             </div>
             
-            <!-- Coluna da Direita: Graduação e Habilidades -->
             <div style="flex: 1; min-width: 250px; max-width: 400px; padding: 20px; background-color: #ffffff86; text-align: center;">
                 <!-- Graduação -->
                 <h3 style="color: #460f4c; margin-bottom: 20px; font-size: 1.5em;">Formação Acadêmica</h3>
@@ -49,7 +48,6 @@
                     <p><strong>Graduação em Análise e Desenvolvimento de Sistemas</strong> - <span style="font-style: italic;">FATEC<br>(2024 - 2026)</span></p>
                 </div>        
                 
-                <!-- Habilidades Técnicas em Evolução -->
                 <h4 style="color: #460f4c; margin-bottom: 20px; font-size: 1.3em;">Habilidades Técnicas em Evolução</h4>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                     <!-- Python -->
@@ -57,17 +55,14 @@
                         <img src="python.png" alt="Python" style="width: 25px; height: 25px;">
                         <p><strong>Python</strong></p>
                     </div>
-                    <!-- Power BI -->
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
                         <img src="powerbi.png" alt="Power BI" style="width: 25px; height: 25px;">
                         <p><strong>Power BI</strong></p>
                     </div>
-                    <!-- Excel -->
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
                         <img src="excel.png" alt="Excel" style="width: 25px; height: 25px;">
                         <p><strong>Excel</strong></p>
                     </div>
-                    <!-- SQL -->
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
                         <img src="sql.png" alt="SQL" style="width: 25px; height: 25px;">
                         <p><strong>SQL</strong></p>
@@ -134,38 +129,32 @@
             const projectInfo = document.querySelector('.project-info');
             setTimeout(function() {
                 projectInfo.classList.add('visible');
-            }, 2000); // Aparecerá após 2 segundos
+            }, 2000);
         });
 
         function VerMais() {
             window.location.href = 'projetos.html';
         }
 
-        let currentIndex = 0; // Começar a partir do primeiro projeto
+        let currentIndex = 0; 
         const projects = document.querySelectorAll('.project');
         const totalProjects = projects.length;
 
         function showNextProjects() {
-            // Ocultar todos os projetos
             projects.forEach((project) => project.style.display = 'none');
             
-            // Mostrar 3 projetos de cada vez, sequencialmente
             for (let i = 0; i < 3; i++) {
-                const index = (currentIndex + i) % totalProjects; // Calcular o índice com loop circular
-                projects[index].style.display = 'block'; // Exibir o projeto
+                const index = (currentIndex + i) % totalProjects; 
+                projects[index].style.display = 'block'; 
             }
 
-            // Atualizar o índice para os próximos 3 projetos
             currentIndex = (currentIndex + 3) % totalProjects;
         }
 
-        // Mostrar os três primeiros projetos ao carregar a página
         showNextProjects();
 
-        // Alternar os projetos automaticamente a cada 4 segundos
         setInterval(showNextProjects, 4000);
 
-        // Função para adicionar o efeito de rolagem suave
         function smoothScroll(selector, duration) {
             document.querySelector(selector).addEventListener('click', function(e) {
                 e.preventDefault();
@@ -198,10 +187,9 @@
             });
         }
 
-        // Chama a função para ambos os links
-        smoothScroll('.btn', 2000); // Para descer até a seção #about
+        smoothScroll('.btn', 2000); 
         smoothScroll('.projects', 2000);
-        smoothScroll('.kk', 2000); // Para subir ao topo
+        smoothScroll('.kk', 2000); 
     </script>
 </body>
 </html>
