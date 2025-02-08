@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link para o CSS externo -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero">Início</a>
+            <a href="#projects">Projetos</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1>SEJA BEM VINDO(A) AO<br>PORTIFÓLIO</h1>
+            <p>Sou Aline Santana, estudante de tecnologia com foco na área de dados.</p>
+            <a href="#projects" class="btn">Conheça mais</a>
+        </div>
+    </section>
+
+    <section id="about" style="padding: 60px; background-color: hwb(295 31% 43% / 0.589); font-family: 'Arial', sans-serif;">
+        <h2 style="color: rgb(255, 255, 255); text-align: center; margin-bottom: 35px; font-size: 2em; font-weight: bold;">Sobre Mim</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content:center;">
+            <!-- Coluna da Esquerda: Sobre Mim e Contate-me -->
+            <div style="flex: 1; min-width: 100px; max-width: 700px; padding: 20px; text-align: center;">
+                <p style="color: rgba(255, 255, 255, 0.528); text-align: center; margin-bottom: 35px; font-size: 17px;">
+                    Sou estudante de Análise e Desenvolvimento de Sistemas pela FATEC, com grande interesse na área de dados. Dedico-me constantemente para melhorar minhas habilidades nas ferramentas da área, com o objetivo de transformar informações em decisões estratégicas. Meu foco está em aplicar esses conhecimentos para gerar insights e contribuir com soluções baseadas em dados.
+                </p>
+                <!-- Redes sociais -->
+                <h4 style="color: rgb(29, 1, 33); margin-top: 30px; font-size: 1.3em; text-align: center;">Contate-me</h4>
+                <div style="margin-top: 20px; text-align: center;">
+                    <a href="https://github.com/alinesantana05" style="font-size: 1.5em; margin-right: 20px; color: #ffffff; text-decoration: none;">GitHub</a>
+                    <a href="https://www.linkedin.com/in/alinesantana05/" style="font-size: 1.5em; margin-right: 20px; color: #ffffff; text-decoration: none;">LinkedIn</a>
+                </div>
+            </div>
+            
+            <!-- Coluna da Direita: Graduação e Habilidades -->
+            <div style="flex: 1; min-width: 250px; max-width: 400px; padding: 20px; background-color: #ffffff86; text-align: center;">
+                <!-- Graduação -->
+                <h3 style="color: #460f4c; margin-bottom: 20px; font-size: 1.5em;">Formação Acadêmica</h3>
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe; margin-bottom: 20px;">
+                    <p><strong>Graduação em Análise e Desenvolvimento de Sistemas</strong> - <span style="font-style: italic;">FATEC<br>(2024 - 2026)</span></p>
+                </div>        
+                
+                <!-- Habilidades Técnicas em Evolução -->
+                <h4 style="color: #460f4c; margin-bottom: 20px; font-size: 1.3em;">Habilidades Técnicas em Evolução</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <!-- Python -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
+                        <img src="python.png" alt="Python" style="width: 25px; height: 25px;">
+                        <p><strong>Python</strong></p>
+                    </div>
+                    <!-- Power BI -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
+                        <img src="powerbi.png" alt="Power BI" style="width: 25px; height: 25px;">
+                        <p><strong>Power BI</strong></p>
+                    </div>
+                    <!-- Excel -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
+                        <img src="excel.png" alt="Excel" style="width: 25px; height: 25px;">
+                        <p><strong>Excel</strong></p>
+                    </div>
+                    <!-- SQL -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 1.1em; color: #460f4cbe;">
+                        <img src="sql.png" alt="SQL" style="width: 25px; height: 25px;">
+                        <p><strong>SQL</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-container" id="projects">
+        <h2>Meus Projetos</h2>
+        <div class="project-grid">
+            <div class="project">
+                <a href="https://github.com/alinesantana05/Mini-Projeto-Analise-de-Logistica">
+                    <img src="logistica.png" alt="Projeto 1">
+                    <h3>Análise de Dados <br>Dashboard - Logística</h3>
+                    <p><strong>Ferramentas:</strong> Power BI</p>
+                    <p>Este dashboard oferece uma visão detalhada dos principais indicadores de desempenho logístico com base em dados históricos, ajudando na otimização dos processos logísticos e na tomada de decisões estratégicas.</p>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/alinesantana05/Mini-Projeto-Analise-de-Marketing">
+                    <img src="marketing.png" alt="Projeto 2">
+                    <h3>Análise de Dados <br>Dashboard - Marketing</h3>
+                    <p><strong>Ferramentas:</strong> Power BI</p>
+                    <p>As métricas aqui apresentadas fornecem insights essenciais para avaliar o sucesso das campanhas, otimizar estratégias e apoiar decisões baseadas em dados.</p>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/alinesantana05/Manipulacao-Basica-de-Dados">
+                    <img src="pandas.png" alt="Projeto 2">
+                    <h3>Manipulação Básica de Dados</h3>
+                    <p><strong>Ferramentas:</strong> Python (Pandas)</p>
+                    <p>O objetivo deste projeto foi aplicar diferentes tipos de dados no Python e realizar operações básicas de manipulação. No final, as técnicas de limpeza de dados foram usadas para garantir que os dados estivessem aptos para análise.</p>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/alinesantana05?tab=repositories">
+                    <img src="BREVE.jpg" alt="Projeto 3">
+                    <h3>Análise Exploratória</h3>
+                    <p><strong>Ferramentas:</strong> Python</p>
+                    <p>Em breve...</p>
+                </a>
+            </div>
+        </div>
+        <a href="#hero" class="btn">⬆️ Ir para o Início</a>
+        <a href="https://github.com/alinesantana05?tab=repositories" class="btn">Ver tudo</a>
+    </section>
+
+    <footer>
+        <div class="linkmedia a" id="contact">
+            <p>Contato</p>
+            <a href="https://www.linkedin.com/in/alinesantana05/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/alinesantana05" target="_blank">GitHub</a>    
+        </div>
+        <p>&copy; 2025</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectInfo = document.querySelector('.project-info');
+            setTimeout(function() {
+                projectInfo.classList.add('visible');
+            }, 2000); // Aparecerá após 2 segundos
+        });
+
+        function VerMais() {
+            window.location.href = 'projetos.html';
+        }
+
+        let currentIndex = 0; // Começar a partir do primeiro projeto
+        const projects = document.querySelectorAll('.project');
+        const totalProjects = projects.length;
+
+        function showNextProjects() {
+            // Ocultar todos os projetos
+            projects.forEach((project) => project.style.display = 'none');
+            
+            // Mostrar 3 projetos de cada vez, sequencialmente
+            for (let i = 0; i < 3; i++) {
+                const index = (currentIndex + i) % totalProjects; // Calcular o índice com loop circular
+                projects[index].style.display = 'block'; // Exibir o projeto
+            }
+
+            // Atualizar o índice para os próximos 3 projetos
+            currentIndex = (currentIndex + 3) % totalProjects;
+        }
+
+        // Mostrar os três primeiros projetos ao carregar a página
+        showNextProjects();
+
+        // Alternar os projetos automaticamente a cada 4 segundos
+        setInterval(showNextProjects, 4000);
+
+        // Função para adicionar o efeito de rolagem suave
+        function smoothScroll(selector, duration) {
+            document.querySelector(selector).addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = this.getAttribute('href') === "#" ? document.documentElement : document.querySelector(this.getAttribute('href'));
+                const startPosition = window.pageYOffset;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                const distance = targetPosition - startPosition;
+                let startTime = null;
+
+                function scrollStep(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    const run = ease(timeElapsed, startPosition, distance, duration);
+                    window.scrollTo(0, run);
+
+                    if (timeElapsed < duration) {
+                        requestAnimationFrame(scrollStep);
+                    }
+                }
+
+                function ease(t, b, c, d) {
+                    const easeInOut = (t, b, c, d) => {
+                        if ((t /= d / 2) < 1) return (c / 2) * t * t + b;
+                        return (-c / 2) * (--t * (t - 2) - 1) + b;
+                    };
+                    return easeInOut(t, b, c, d);
+                }
+
+                requestAnimationFrame(scrollStep);
+            });
+        }
+
+        // Chama a função para ambos os links
+        smoothScroll('.btn', 2000); // Para descer até a seção #about
+        smoothScroll('.projects', 2000);
+        smoothScroll('.kk', 2000); // Para subir ao topo
+    </script>
+</body>
+</html>
