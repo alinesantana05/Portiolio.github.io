@@ -646,4 +646,125 @@
                             <a href="https://github.com/alinesantana05/Mini-Projeto-Analise-de-Marketing" class="btn" target="_blank">Ver Projeto</a>
                         </div>
                     </div>
-          
+                </div>
+                
+                <div class="project animate delay-2">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Manipulação de Dados">
+                    </div>
+                    <div class="project-content">
+                        <h3>Manipulação Básica de Dados</h3>
+                        <div class="project-tools">
+                            <i class="fab fa-python"></i>
+                            <span>Python (Pandas)</span>
+                        </div>
+                        <p>O objetivo deste projeto foi aplicar diferentes tipos de dados no Python e realizar operações básicas de manipulação. No final, as técnicas de limpeza de dados foram usadas para garantir que os dados estivessem aptos para análise.</p>
+                        <div class="project-btns">
+                            <a href="https://github.com/alinesantana05/Manipulacao-Basica-de-Dados" class="btn" target="_blank">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project animate delay-3">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Análise Exploratória">
+                    </div>
+                    <div class="project-content">
+                        <h3>Análise Exploratória</h3>
+                        <div class="project-tools">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <p>Em breve... Um projeto de análise exploratória de dados utilizando Python e bibliotecas como Pandas, Matplotlib e Seaborn para extrair insights valiosos de conjuntos de dados complexos.</p>
+                        <div class="project-btns">
+                            <a href="https://github.com/alinesantana05?tab=repositories" class="btn" target="_blank">Ver Repositórios</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#hero" class="btn btn-outline">⬆️ Ir para o Início</a>
+                <a href="https://github.com/alinesantana05?tab=repositories" class="btn" target="_blank">Ver todos os projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#hero">Início</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#about">Sobre Mim</a>
+                    <a href="https://github.com/alinesantana05" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/alinesantana05/" target="_blank">LinkedIn</a>
+                </div>
+                <p class="copyright">&copy; 2025 Aline Santana. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu toggle for mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+        
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    nav.classList.remove('active');
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateElements = document.querySelectorAll('.animate');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Project hover animation
+        const projects = document.querySelectorAll('.project');
+        
+        projects.forEach(project => {
+            project.addEventListener('mouseenter', () => {
+                project.style.transform = 'translateY(-10px)';
+            });
+            
+            project.addEventListener('mouseleave', () => {
+                project.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
